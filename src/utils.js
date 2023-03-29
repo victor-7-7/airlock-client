@@ -141,7 +141,15 @@ export const getFirstValidDate = (invalidDates, checkInDate) => {
 
 // check if rangeToCheck (check in and check out dates) overlaps with an existing booking
 export const areDatesValid = (bookings, rangeToCheck) => {
-  return bookings.find(booking =>
+  // Если выбранный в пикере диапазон rangeToCheck пересекается хотя бы с одним
+  // из забронированных (bookings) диапазонов, то метод find() вернет этот booking-элемент
+  // из bookings-массива. Иначе find() вернет undefined.
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+  // undefined turns into false
+  // All objects become true
+  // Следовательно при найденном пересечении будет возвращен false,
+  // а если пересечений не найдется, то будет возвращено true
+  return !bookings.find(booking =>
     areIntervalsOverlapping(
       {
         start: new Date(booking.checkInDate),
@@ -149,7 +157,5 @@ export const areDatesValid = (bookings, rangeToCheck) => {
       },
       rangeToCheck
     )
-  )
-    ? false
-    : true;
+  );
 };
