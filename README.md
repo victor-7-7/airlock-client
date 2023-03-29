@@ -1,10 +1,8 @@
-# Odyssey Voyage II - Client (Airlock)
+# Odyssey Voyage III - Client (Airlock)
 
-Welcome to the companion app of Odyssey's Voyage II: Federating the Monolith! This is the `client` frontend of the Airlock app. You can [find the course lessons and instructions on Odyssey](http://odyssey.apollographql.com/voyage-part2), Apollo's learning platform.
+Welcome to the companion app of Odyssey's Voyage III: Federation in Production! This is the `client` frontend of the Airlock app. You can [find the course lessons and instructions on Odyssey](http://odyssey.apollographql.com/voyage-part3), Apollo's learning platform.
 
-You can [preview the completed demo app here](https://odyssey-airlock.netlify.app/).
-
-You can [find the server counterpart here](https://github.com/apollographql/odyssey-voyage-II-server).
+You can [find the server counterpart here](https://github.com/victor-7-7/airlock-server).
 
 ## How to use this repo
 
@@ -17,7 +15,7 @@ To get started:
 
 This will open up a new browser tab to [http://localhost:3000](http://localhost:3000)
 
-You will need the [back-end server](https://github.com/apollographql/odyssey-voyage-II-server) running on `localhost:4000` for any queries to work.
+You will need the [back-end server](https://github.com/victor-7-7/airlock-server) running on `localhost:4000` for any queries to work.
 ## Getting Help
 
 For any issues or problems concerning the course content, please [refer to the Odyssey topic in our community forums](https://community.apollographql.com/tags/c/help/6/odyssey).
